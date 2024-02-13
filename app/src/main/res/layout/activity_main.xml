@@ -12,17 +12,21 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="125dp"
         android:layout_marginTop="10dp"
-        android:src="@tools:sample/avatars" />
+        android:background="@drawable/circleview"
+        app:srcCompat="@drawable/baseline_person_24" />
 
     <TextView
         android:id="@+id/imgChoose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Choose an Image?"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#537AED" />
 
     <EditText
         android:id="@+id/userName"
@@ -32,29 +36,38 @@
         android:hint="Enter Name"
         android:inputType="text"
         android:textSize="20sp" />
+
     <EditText
         android:id="@+id/userFatherName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enter Name"
+        android:hint="Enter Father name"
         android:inputType="text"
         android:textSize="20sp" />
+
     <EditText
         android:id="@+id/userMobileNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enter Name"
+        android:hint="Enter Mobile Number"
         android:inputType="text"
         android:textSize="20sp" />
+
     <EditText
         android:id="@+id/userCnicNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enter Name"
+        android:hint="Enter CNIC Number"
         android:inputType="text"
         android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
 
 </LinearLayout>
